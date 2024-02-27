@@ -1,6 +1,6 @@
 <h1>Tasks</h1>
 <ul style="padding: 0;">
   <% @tasks.each do |task| %>
-  <li style="display: flex;"><input type="checkbox" ><p><%= link_to task.title, tasks_path(task) %></p></li>
+  <li style="display: flex;"><input type="checkbox" ><p><%= link_to task.title, task_path(task) %></p></li>
   <% end %>
 </ul>
